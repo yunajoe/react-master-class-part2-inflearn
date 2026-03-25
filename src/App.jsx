@@ -1,10 +1,11 @@
-import ShoppingCart from "./components/ShoppingCart.jsx";
+import ShoppingCartAnswer from "./components/ShoppingCartAnswer.jsx";
 
 function App() {
   return (
     <>
       {/* <Cafeteria /> */}
-      <ShoppingCart />
+      {/* <ShoppingCart /> */}
+      <ShoppingCartAnswer />
     </>
   );
 }

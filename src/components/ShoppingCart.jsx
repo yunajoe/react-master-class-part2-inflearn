@@ -56,7 +56,6 @@ export default function ShoppingCart() {
 
   const calculateTotalPrice = (state) => {
     return state.reduce((acc, item) => {
-      console.log("item", item);
       acc += item.price;
       return acc;
     }, 0);
