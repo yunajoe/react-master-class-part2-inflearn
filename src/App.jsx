@@ -1,11 +1,12 @@
-import ShoppingCartAnswer from "./components/ShoppingCartAnswer.jsx";
+import Reservation from "./components/Reservation.jsx";
 
 function App() {
   return (
     <>
       {/* <Cafeteria /> */}
       {/* <ShoppingCart /> */}
-      <ShoppingCartAnswer />
+      {/* <ShoppingCartAnswer /> */}
+      <Reservation />
     </>
   );
 }
