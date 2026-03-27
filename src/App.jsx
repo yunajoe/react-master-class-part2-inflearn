@@ -1,4 +1,4 @@
-import ReservationAnswer from "./components/ReservationAnswer.jsx";
+import OfficeControl from "./components/OfficeControl.jsx";
 
 function App() {
   return (
@@ -7,7 +7,8 @@ function App() {
       {/* <ShoppingCart /> */}
       {/* <ShoppingCartAnswer /> */}
       {/* <Reservation /> */}
-      <ReservationAnswer />
+      {/* <ReservationAnswer /> */}
+      <OfficeControl />
     </>
   );
 }
