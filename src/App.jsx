@@ -1,4 +1,4 @@
-import AdvancedCafeteria from "./components/AdvancedCafeteria.jsx";
+import StateCart from "./components/StateCart.jsx";
 
 function App() {
   return (
@@ -9,7 +9,8 @@ function App() {
       {/* <Reservation /> */}
       {/* <ReservationAnswer /> */}
       {/* <OfficeControl /> */}
-      <AdvancedCafeteria />
+      {/* <AdvancedCafeteria /> */}
+      <StateCart />
     </>
   );
 }
