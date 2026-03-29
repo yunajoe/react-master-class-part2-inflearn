@@ -1,4 +1,4 @@
-import OfficeControl from "./components/OfficeControl.jsx";
+import AdvancedCafeteria from "./components/AdvancedCafeteria.jsx";
 
 function App() {
   return (
@@ -8,7 +8,8 @@ function App() {
       {/* <ShoppingCartAnswer /> */}
       {/* <Reservation /> */}
       {/* <ReservationAnswer /> */}
-      <OfficeControl />
+      {/* <OfficeControl /> */}
+      <AdvancedCafeteria />
     </>
   );
 }
