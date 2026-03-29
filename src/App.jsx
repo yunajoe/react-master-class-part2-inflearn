@@ -1,5 +1,4 @@
-import ReducerCart from "./components/ReducerCart.jsx";
-import StateCart from "./components/StateCart.jsx";
+import ModularCafeteria from "./components/ModularCafeteria.jsx";
 
 function App() {
   return (
@@ -11,8 +10,9 @@ function App() {
       {/* <ReservationAnswer /> */}
       {/* <OfficeControl /> */}
       {/* <AdvancedCafeteria /> */}
-      <StateCart />
-      <ReducerCart />
+      {/* <StateCart />
+      <ReducerCart /> */}
+      <ModularCafeteria />
     </>
   );
 }
