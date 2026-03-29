@@ -8,6 +8,6 @@ import { riceReducer } from "./rice/riceReducer";
 
 export function rootReducer(state, action) {
   return {
-    riceL: riceReducer(state.rice, action),
+    rice: riceReducer(state.rice, action),
   };
 }

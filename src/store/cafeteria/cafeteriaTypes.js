@@ -1,0 +1,5 @@
+export const CAFETERIA_ACTION_TYPES = Object.freeze({
+  ADD_RICE: "ADD_RICE",
+  REFILL_SOUP: "REFILL_SOUP",
+  CHANGE_MENU: "CHANGE_MENU",
+});

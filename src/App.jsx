@@ -1,4 +1,4 @@
-import ModularCafeteria from "./components/ModularCafeteria.jsx";
+import Restaurant from "./components/Restaurant.jsx";
 
 function App() {
   return (
@@ -12,7 +12,8 @@ function App() {
       {/* <AdvancedCafeteria /> */}
       {/* <StateCart />
       <ReducerCart /> */}
-      <ModularCafeteria />
+      {/* <ModularCafeteria /> */}
+      <Restaurant />
     </>
   );
 }
