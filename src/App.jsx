@@ -1,3 +1,4 @@
+import ReducerCart from "./components/ReducerCart.jsx";
 import StateCart from "./components/StateCart.jsx";
 
 function App() {
@@ -11,6 +12,7 @@ function App() {
       {/* <OfficeControl /> */}
       {/* <AdvancedCafeteria /> */}
       <StateCart />
+      <ReducerCart />
     </>
   );
 }
