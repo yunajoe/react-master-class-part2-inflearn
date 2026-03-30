@@ -1,22 +1,27 @@
 import { useReducer } from "react";
 import {
+  decreaseCourse,
+  increaseCourse,
+} from "../store/course/courseActions.js";
+import {
   courseInitialData,
   courseReducer,
 } from "../store/course/courseReducer.js";
 
 function Course() {
   const [state, dispatch] = useReducer(courseReducer, courseInitialData);
-  console.log("state", state);
 
   return (
     <div>
       <h1>GEMINI ACADEMY 수강 바구니</h1>
       <hr />
       {state.items.map((item) => (
-        <div>
-          <p>React 마스터 클래스 (50,000원)</p>
-          <button>[+]</button>
-          <button>[-]</button>
+        <div key={item.id}>
+          <p>
+            {item.name} ({item.price}원)
+          </p>
+          <button onClick={() => dispatch(increaseCourse(item))}>[+]</button>
+          <button onClick={() => dispatch(decreaseCourse(item))}>[-]</button>
         </div>
       ))}
       <hr />
