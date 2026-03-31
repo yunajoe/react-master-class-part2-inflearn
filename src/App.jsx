@@ -1,4 +1,4 @@
-import Course from "./components/Course.jsx";
+import AnswerCourse from "./components/AnswerCourse.jsx";
 
 function App() {
   return (
@@ -14,7 +14,8 @@ function App() {
       <ReducerCart /> */}
       {/* <ModularCafeteria /> */}
       {/* <Restaurant /> */}
-      <Course />
+      {/* <Course /> */}
+      <AnswerCourse />
     </>
   );
 }
