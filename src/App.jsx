@@ -1,4 +1,4 @@
-import AnswerCourse from "./components/AnswerCourse.jsx";
+import Task from "./components/Task.jsx";
 
 function App() {
   return (
@@ -15,7 +15,9 @@ function App() {
       {/* <ModularCafeteria /> */}
       {/* <Restaurant /> */}
       {/* <Course /> */}
-      <AnswerCourse />
+      {/* <AnswerCourse /> */}
+      <Task />
+      {/* <AnswerTask /> */}
     </>
   );
 }
