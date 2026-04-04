@@ -1,16 +1,13 @@
-import { useState } from "react";
 import "./App.css";
-import { LangContext } from "./contexts/LanguageContext.jsx";
-import Layout from "./Layout.jsx";
+import ApartSystem from "./components/ApartSystem.jsx";
 
 function App() {
-  const [lang, setLang] = useState("KO");
-
   return (
     <>
-      <LangContext value={{ lang, setLang }}>
+      {/* <LangContext value={{ lang, setLang }}>
         <Layout />
-      </LangContext>
+      </LangContext> */}
+      <ApartSystem />
     </>
   );
 }
