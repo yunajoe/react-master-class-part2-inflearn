@@ -1,5 +1,5 @@
 import "./App.css";
-import ApartSystem from "./components/ApartSystem.jsx";
+import Theme from "./components/Theme";
 
 function App() {
   return (
@@ -7,7 +7,8 @@ function App() {
       {/* <LangContext value={{ lang, setLang }}>
         <Layout />
       </LangContext> */}
-      <ApartSystem />
+      {/* <ApartSystem /> */}
+      <Theme />
     </>
   );
 }
