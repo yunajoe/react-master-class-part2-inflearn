@@ -1,15 +1,16 @@
 import "./App.css";
-import Theme from "./components/Theme";
+import AuthSystem from "./components/AuthSystem";
+import Test from "./components/Test";
+import AuthProvider from "./contexts/AuthContext";
 
 function App() {
   return (
-    <>
-      {/* <LangContext value={{ lang, setLang }}>
-        <Layout />
-      </LangContext> */}
-      {/* <ApartSystem /> */}
-      <Theme />
-    </>
+    <div style={{ minHeight: "100vh" }}>
+      <AuthProvider>
+        <AuthSystem />
+      </AuthProvider>
+      <Test />
+    </div>
   );
 }
 
