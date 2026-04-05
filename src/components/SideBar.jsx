@@ -8,11 +8,11 @@ function Sidebar() {
   return (
     <div
       style={{
-        // background: isDarkMode ? "#fff" : "#000",
-        background: "blue",
+        background: isDarkMode ? "#fff" : "#000",
         position: "fixed",
-        insets: 0,
-        width: "20px",
+        top: 0,
+        bottom: 0,
+        width: "180px",
       }}
     >
       <SettingsPanel />
