@@ -1,6 +1,6 @@
 import "./App.css";
-import SignUpPage from "./page/SignUpPage.jsx";
-import FormProvider from "./provider/FormProvider.jsx";
+import CounterScreen from "./components/CounterScreen.jsx";
+import CounterProvider from "./provider/CounterProvider.jsx";
 
 function App() {
   return (
@@ -12,9 +12,9 @@ function App() {
         alignItems: "center",
       }}
     >
-      <FormProvider>
-        <SignUpPage />
-      </FormProvider>
+      <CounterProvider>
+        <CounterScreen />
+      </CounterProvider>
     </div>
   );
 }
