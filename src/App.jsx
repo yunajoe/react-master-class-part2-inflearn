@@ -1,6 +1,6 @@
 import "./App.css";
-import CounterScreen from "./components/CounterScreen.jsx";
-import CounterProvider from "./provider/CounterProvider.jsx";
+import MallSystem from "./components/MallSystem.jsx";
+import ToastProvider from "./provider/MallProvider.jsx";
 
 function App() {
   return (
@@ -12,9 +12,9 @@ function App() {
         alignItems: "center",
       }}
     >
-      <CounterProvider>
-        <CounterScreen />
-      </CounterProvider>
+      <ToastProvider>
+        <MallSystem />
+      </ToastProvider>
     </div>
   );
 }

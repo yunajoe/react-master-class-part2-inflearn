@@ -1,0 +1,21 @@
+.toast {
+  position: fixed;
+  background: red;
+  bottom: 0;
+  padding: 24px;
+  border-radius: 8px;
+  animation: slideUp 1s ease-out forwards;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateX(-50%) translateY(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(-50%) translateY((-50px));
+    opacity: 1;
+  }
+}
