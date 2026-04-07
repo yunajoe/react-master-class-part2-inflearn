@@ -1,7 +1,13 @@
 import "./App.css";
-import MallSystem from "./components/MallSystem.jsx";
-import ToastProvider from "./provider/MallProvider.jsx";
+import LoginButton from "./components/LoginButton.jsx";
+import AuthProvider from "./provider/AuthProvider.jsx";
 
+/**
+ *
+ * 간련 로그인 하기 버튼 클릭 => 인증 확인 중... => 로그아웃
+ *
+ *
+ */
 function App() {
   return (
     <div
@@ -12,9 +18,9 @@ function App() {
         alignItems: "center",
       }}
     >
-      <ToastProvider>
-        <MallSystem />
-      </ToastProvider>
+      <AuthProvider>
+        <LoginButton />
+      </AuthProvider>
     </div>
   );
 }
