@@ -1,13 +1,7 @@
 import "./App.css";
-import LoginButton from "./components/LoginButton.jsx";
-import AuthProvider from "./provider/AuthProvider.jsx";
+import DashBoard from "./components/DashBoard.jsx";
+import DashBoardProvider from "./provider/DashBoardProvider.jsx";
 
-/**
- *
- * 간련 로그인 하기 버튼 클릭 => 인증 확인 중... => 로그아웃
- *
- *
- */
 function App() {
   return (
     <div
@@ -18,9 +12,9 @@ function App() {
         alignItems: "center",
       }}
     >
-      <AuthProvider>
-        <LoginButton />
-      </AuthProvider>
+      <DashBoardProvider>
+        <DashBoard />
+      </DashBoardProvider>
     </div>
   );
 }
