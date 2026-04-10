@@ -1,6 +1,6 @@
 import "./App.css";
-import DashBoard from "./components/DashBoard.jsx";
-import DashBoardProvider from "./provider/DashBoardProvider.jsx";
+import ProductSystem from "./components/ProductSystem";
+import ProductProvider from "./provider/ProductProvider";
 
 function App() {
   return (
@@ -12,9 +12,9 @@ function App() {
         alignItems: "center",
       }}
     >
-      <DashBoardProvider>
-        <DashBoard />
-      </DashBoardProvider>
+      <ProductProvider>
+        <ProductSystem />
+      </ProductProvider>
     </div>
   );
 }
