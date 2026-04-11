@@ -42,8 +42,8 @@ function ProductProvider({ children }) {
   const memoizedState = useMemo(() => state, [state]);
 
   return (
-    <ProductStateContext.Provider value={{ state: memoizedState }}>
-      <ProductDispatchContext.Provider value={{ dispatch }}>
+    <ProductStateContext.Provider value={memoizedState}>
+      <ProductDispatchContext.Provider value={dispatch}>
         {children}
       </ProductDispatchContext.Provider>
     </ProductStateContext.Provider>
