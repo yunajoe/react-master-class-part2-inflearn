@@ -1,55 +1,32 @@
-import { createContext, useReducer } from "react";
+import { useMemo, useReducer } from "react";
+import { AuthDispatchContext, AuthStateContext } from "../contexts/AuthContext";
 
-export const AuthContext = createContext();
-
-function reducer(state, action) {
+function authReducer(state, action) {
   switch (action.type) {
-    case "LOGIN": {
-      return {
-        ...state,
-        user: action.payload,
-        isLoading: true,
-      };
-    }
-
-    case "LOGIN_SUCCESS": {
-      return {
-        ...state,
-        isLoading: false,
-      };
-    }
-
-    case "LOGIN_FAIL": {
-      return {
-        ...state,
-        user: null,
-        isLoading: false,
-      };
-    }
-
-    case "LOGOUT": {
-      return {
-        ...initialState,
-      };
-    }
-
+    case "LOGIN_START":
+      return { user: null, isLoading: true, error: null };
+    case "LOGIN_SUCCESS":
+      return { user: action.payload, isLoading: false, error: null };
+    case "LOGIN_FAILURE":
+      return { user: null, isLoading: false, error: action.payload };
+    case "LOGOUT":
+      return { user: null, isLoading: false, error: null };
     default:
       return state;
   }
 }
 
-const initialState = {
-  user: null,
-  isLoading: false,
-  isError: false,
-};
-
 function AuthProvider({ children }) {
-  const [state, dispatch] = useReducer(reducer, initialState);
+  const [state, dispatch] = useReducer(authReducer, {
+    user: null,
+    isLoading: false,
+    error: null,
+  });
+  const memoizedState = useMemo(() => state, [state]);
   return (
-    <AuthContext.Provider value={{ state, dispatch }}>
-      {children}
-    </AuthContext.Provider>
+    <AuthStateContext.Provider value={memoizedState}>
+      <AuthDispatchContext value={dispatch}>{children}</AuthDispatchContext>
+    </AuthStateContext.Provider>
   );
 }
 

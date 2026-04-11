@@ -1,6 +1,7 @@
 import "./App.css";
-import ProductSystem from "./components/ProductSystem";
-import ProductProvider from "./provider/ProductProvider";
+import CartSystem from "./components/CartSystem";
+import AuthProvider from "./provider/AuthProvider";
+import CartProvider from "./provider/CartProvider";
 
 function App() {
   return (
@@ -12,9 +13,11 @@ function App() {
         alignItems: "center",
       }}
     >
-      <ProductProvider>
-        <ProductSystem />
-      </ProductProvider>
+      <AuthProvider>
+        <CartProvider>
+          <CartSystem />
+        </CartProvider>
+      </AuthProvider>
     </div>
   );
 }
