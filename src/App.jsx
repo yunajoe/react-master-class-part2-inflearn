@@ -1,11 +1,12 @@
 import "./App.css";
-import SecretCounter from "./components/SecretCounter";
+import MagicSearch from "./components/MagicSearch";
 
 function App() {
   return (
     <>
       {/* <ReferenceExample /> */}
-      <SecretCounter />
+      {/* <SecretCounter /> */}
+      <MagicSearch />
     </>
   );
 }
