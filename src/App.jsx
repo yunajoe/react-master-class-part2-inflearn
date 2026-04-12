@@ -1,12 +1,13 @@
 import "./App.css";
-import MagicSearch from "./components/MagicSearch";
+import FocusManager from "./components/FocusManager";
 
 function App() {
   return (
     <>
       {/* <ReferenceExample /> */}
       {/* <SecretCounter /> */}
-      <MagicSearch />
+      {/* <MagicSearch /> */}
+      <FocusManager />
     </>
   );
 }
