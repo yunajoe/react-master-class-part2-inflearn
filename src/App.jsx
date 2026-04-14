@@ -1,5 +1,5 @@
 import "./App.css";
-import FocusManager from "./components/FocusManager";
+import SkipFirstRender from "./components/SkipFirstRender.jsx";
 
 function App() {
   return (
@@ -7,7 +7,9 @@ function App() {
       {/* <ReferenceExample /> */}
       {/* <SecretCounter /> */}
       {/* <MagicSearch /> */}
-      <FocusManager />
+      {/* <FocusManager /> */}
+      {/* <PriceTracker /> */}
+      <SkipFirstRender />
     </>
   );
 }
