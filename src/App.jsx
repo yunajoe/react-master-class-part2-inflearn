@@ -1,5 +1,5 @@
 import "./App.css";
-import SkipFirstRender from "./components/SkipFirstRender.jsx";
+import ExchangeRateTracker from "./components/ExchangeRateTracker.jsx";
 
 function App() {
   return (
@@ -9,7 +9,8 @@ function App() {
       {/* <MagicSearch /> */}
       {/* <FocusManager /> */}
       {/* <PriceTracker /> */}
-      <SkipFirstRender />
+      {/* <SkipFirstRender /> */}
+      <ExchangeRateTracker />
     </>
   );
 }
