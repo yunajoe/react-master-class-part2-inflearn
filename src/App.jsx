@@ -1,5 +1,5 @@
 import "./App.css";
-import VideoOptimizer from "./components/VideoOptimizer.jsx";
+import AdvancedDropdown from "./components/AdvancedDropdown.jsx";
 
 function App() {
   return (
@@ -12,7 +12,8 @@ function App() {
       {/* <SkipFirstRender /> */}
       {/* <ExchangeRateTracker /> */}
       {/* <SmartTimer /> */}
-      <VideoOptimizer />
+      {/* <VideoOptimizer /> */}
+      <AdvancedDropdown />
     </>
   );
 }
