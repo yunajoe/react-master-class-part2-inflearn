@@ -1,5 +1,5 @@
 import "./App.css";
-import AdvancedDropdown from "./components/AdvancedDropdown.jsx";
+import PremiumPlayer from "./components/PremiumPlayer.jsx";
 
 function App() {
   return (
@@ -13,7 +13,8 @@ function App() {
       {/* <ExchangeRateTracker /> */}
       {/* <SmartTimer /> */}
       {/* <VideoOptimizer /> */}
-      <AdvancedDropdown />
+      {/* <AdvancedDropdown /> */}
+      <PremiumPlayer />
     </>
   );
 }
