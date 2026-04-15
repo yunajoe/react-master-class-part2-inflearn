@@ -1,5 +1,5 @@
 import "./App.css";
-import ExchangeRateTracker from "./components/ExchangeRateTracker.jsx";
+import VideoOptimizer from "./components/VideoOptimizer.jsx";
 
 function App() {
   return (
@@ -10,7 +10,9 @@ function App() {
       {/* <FocusManager /> */}
       {/* <PriceTracker /> */}
       {/* <SkipFirstRender /> */}
-      <ExchangeRateTracker />
+      {/* <ExchangeRateTracker /> */}
+      {/* <SmartTimer /> */}
+      <VideoOptimizer />
     </>
   );
 }

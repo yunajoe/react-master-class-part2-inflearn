@@ -7,12 +7,12 @@ function ExchangeRateTracker() {
   const prevRateRef = useRef(null);
 
   useEffect(() => {
-    prevRateRef.current = rate;
     if (isFirstRef.current) {
       isFirstRef.current = false;
       return;
     }
     alert(`환율이 ${rate}원으로 변동되었습니다.`);
+    prevRateRef.current = rate;
   }, [rate]);
 
   return (
