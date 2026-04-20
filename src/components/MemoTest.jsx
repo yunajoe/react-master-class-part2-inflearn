@@ -1,5 +1,5 @@
 import { memoFibonacci, pureFibonacci } from "../utils/fibonacci.js";
-import { getComplexDiscount } from "./GetCompleteDiscount.jsx";
+import { getComplexDiscount } from "../utils/GetCompleteDiscount.js";
 
 export default function MemoTest() {
   const runTest = (type) => {

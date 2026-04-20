@@ -1,8 +1,8 @@
 import "./App.css";
-import MemoTest from "./components/MemoTest.jsx";
+import CalculationConsole from "./components/CalculateConsole.jsx";
 
 function App() {
-  return <MemoTest />;
+  return <CalculationConsole />;
 }
 
 export default App;
