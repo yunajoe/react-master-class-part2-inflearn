@@ -1,8 +1,8 @@
 import "./App.css";
-import StockAnalyzer from "./components/StockAnalyzer.jsx";
+import OptimizedUserList from "./components/OptimizedUserList.jsx";
 
 function App() {
-  return <StockAnalyzer />;
+  return <OptimizedUserList />;
 }
 
 export default App;
