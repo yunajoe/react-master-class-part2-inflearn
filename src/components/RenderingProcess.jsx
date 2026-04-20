@@ -11,13 +11,11 @@ function RenderingProcess() {
   );
 
   const startTime = performance.now();
-  console.log("StartTime", startTime);
   let heavyValue = 0;
   for (let i = 0; i < 10000000; i++) {
     heavyValue++;
   }
   const endTime = performance.now();
-  console.log("EndTie", endTime);
 
   return (
     <div

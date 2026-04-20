@@ -1,8 +1,8 @@
 import "./App.css";
-import RenderingProcess from "./components/RenderingProcess.jsx";
+import MemoTest from "./components/MemoTest.jsx";
 
 function App() {
-  return <RenderingProcess />;
+  return <MemoTest />;
 }
 
 export default App;
