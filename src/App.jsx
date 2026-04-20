@@ -1,8 +1,8 @@
 import "./App.css";
-import CalculationConsole from "./components/CalculateConsole.jsx";
+import StockAnalyzer from "./components/StockAnalyzer.jsx";
 
 function App() {
-  return <CalculationConsole />;
+  return <StockAnalyzer />;
 }
 
 export default App;
