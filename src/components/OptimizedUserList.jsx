@@ -1,7 +1,7 @@
 import { useMemo, useState } from "react";
 import { generateUsers } from "../utils/dataGenerator.js";
 
-const users = generateUsers(); //
+const users = generateUsers();
 function OptimizedUserList() {
   const [query, setQuery] = useState("");
   const [isDark, setIsDark] = useState(false);
