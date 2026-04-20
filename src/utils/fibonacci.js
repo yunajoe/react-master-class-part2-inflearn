@@ -6,12 +6,7 @@ export function pureFibonacci(n) {
 const memo = {};
 
 export function memoFibonacci(n) {
-  // A. 장부를 먼저 확인합니다. 이미 계산한 적이 있다면 즉시 반환합니다.
-  console.log("memo", memo);
-
   if (n in memo) {
-    console.log("n", n);
-
     return memo[n];
   }
 
