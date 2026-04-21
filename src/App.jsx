@@ -1,8 +1,8 @@
 import "./App.css";
-import ActionConsole from "./components/ActionConsole.jsx";
+import SecuritySystem from "./components/SecuritySystem.jsx";
 
 function App() {
-  return <ActionConsole />;
+  return <SecuritySystem />;
 }
 
 export default App;
