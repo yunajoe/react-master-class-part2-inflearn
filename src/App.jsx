@@ -1,8 +1,8 @@
 import "./App.css";
-import OptimizedUserList from "./components/OptimizedUserList.jsx";
+import ActionConsole from "./components/ActionConsole.jsx";
 
 function App() {
-  return <OptimizedUserList />;
+  return <ActionConsole />;
 }
 
 export default App;
