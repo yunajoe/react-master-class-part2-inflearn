@@ -1,8 +1,8 @@
 import "./App.css";
-import Dashboard from "./components/Dashboard.jsx";
+import ChatRoom from "./components/ChatRoom.jsx";
 
 function App() {
-  return <Dashboard />;
+  return <ChatRoom />;
 }
 
 export default App;
