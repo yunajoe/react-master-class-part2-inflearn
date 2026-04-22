@@ -1,8 +1,8 @@
 import "./App.css";
-import ChatRoom from "./components/ChatRoom.jsx";
+import Parent from "./components/Parent.jsx";
 
 function App() {
-  return <ChatRoom />;
+  return <Parent />;
 }
 
 export default App;
