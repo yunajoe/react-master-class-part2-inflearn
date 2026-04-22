@@ -1,8 +1,8 @@
 import "./App.css";
-import Parent from "./components/Parent.jsx";
+import UserList from "./components/UserList.jsx";
 
 function App() {
-  return <Parent />;
+  return <UserList />;
 }
 
 export default App;
