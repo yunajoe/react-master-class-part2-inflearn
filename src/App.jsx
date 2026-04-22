@@ -1,8 +1,8 @@
 import "./App.css";
-import ParentApp from "./components/ParentApp.jsx";
+import Dashboard from "./components/Dashboard.jsx";
 
 function App() {
-  return <ParentApp />;
+  return <Dashboard />;
 }
 
 export default App;
