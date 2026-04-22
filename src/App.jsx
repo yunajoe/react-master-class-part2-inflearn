@@ -1,8 +1,8 @@
 import "./App.css";
-import SecuritySystem from "./components/SecuritySystem.jsx";
+import ParentApp from "./components/ParentApp.jsx";
 
 function App() {
-  return <SecuritySystem />;
+  return <ParentApp />;
 }
 
 export default App;
