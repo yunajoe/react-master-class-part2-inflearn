@@ -1,0 +1,25 @@
+import { memo } from "react";
+
+// 의도적으로 CPU를 점유하는 컴포넌트
+const HeavyComponent = memo(function HeavyComponent() {
+  const start = performance.now();
+  // 의도적인 부하: 100ms가 지날 때까지 CPU 메인 스레드를 붙잡아둡니다.
+  while (performance.now() - start < 100) {}
+  return (
+    <div
+      style={{
+        padding: "20px",
+        border: "2px solid #ff4757",
+        marginTop: "20px",
+        borderRadius: "10px",
+      }}
+    >
+      <h3>⚠️ 저는 아주 무거운 컴포넌트입니다.</h3>
+      <p>
+        한 번 그릴 때마다 <b>100ms</b>가 걸려요!
+      </p>
+    </div>
+  );
+});
+
+export default HeavyComponent;

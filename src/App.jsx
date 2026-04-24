@@ -1,8 +1,8 @@
 import "./App.css";
-import ShoppingCart from "./components/ShoppingCart.jsx";
+import PerformanceDashboard from "./components/PerformanceDashboard.jsx";
 
 function App() {
-  return <ShoppingCart />;
+  return <PerformanceDashboard />;
 }
 
 export default App;
