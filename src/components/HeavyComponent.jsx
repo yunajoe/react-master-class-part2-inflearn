@@ -1,7 +1,5 @@
-import { memo } from "react";
-
 // 의도적으로 CPU를 점유하는 컴포넌트
-const HeavyComponent = memo(function HeavyComponent() {
+function HeavyComponent() {
   const start = performance.now();
   // 의도적인 부하: 100ms가 지날 때까지 CPU 메인 스레드를 붙잡아둡니다.
   while (performance.now() - start < 100) {}
@@ -20,6 +18,6 @@ const HeavyComponent = memo(function HeavyComponent() {
       </p>
     </div>
   );
-});
+}
 
 export default HeavyComponent;
