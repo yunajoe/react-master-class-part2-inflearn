@@ -1,8 +1,8 @@
 import "./App.css";
-import UserList from "./components/UserList.jsx";
+import ShoppingCart from "./components/ShoppingCart.jsx";
 
 function App() {
-  return <UserList />;
+  return <ShoppingCart />;
 }
 
 export default App;
