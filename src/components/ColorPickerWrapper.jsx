@@ -1,5 +1,10 @@
 import { useState } from "react";
-
+/**
+ *
+ * props.children으로 전달된 엘리먼트는
+ * 부모 컴포넌트가 실행되기 전인 외부에서 이미 객체 형태로 생성되었습니다.
+ *  따라서 부모가 리렌더링되어도 리액트는 "이 도시락은 밖에서 온 거네?"라고 판단하며 내부를 다시 뒤지지 않는 자동 베일아웃(Bail-out) 효과를 줍니다.
+ */
 function ColorPickerWrapper({ children }) {
   const [color, setColor] = useState("#ffffff");
 
