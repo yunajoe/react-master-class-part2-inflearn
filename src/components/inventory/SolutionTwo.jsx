@@ -1,5 +1,23 @@
 import { memo, useCallback, useMemo, useState } from "react";
 
+function ThemeProvider({ children }) {
+  const [isDark, setIsDark] = useState(false);
+  console.log("🎨 [Theme] 배경색 변경됨");
+  return (
+    <div
+      style={{
+        background: isDark ? "#2d3436" : "#fff",
+        color: isDark ? "#dfe6e9" : "#2d3436",
+        minHeight: "100vh",
+        padding: "20px",
+      }}
+    >
+      <button onClick={() => setIsDark(!isDark)}>다크모드 토글</button>
+      {children}
+    </div>
+  );
+}
+
 const ProductItem = memo(function ProductItem({ product, onRemove }) {
   console.log(`❌ [Bad Render] ID: ${product.id}`);
   return (
@@ -20,12 +38,12 @@ const ProductItem = memo(function ProductItem({ product, onRemove }) {
 });
 
 const initialProducts = Array.from({ length: 10 }, (_, i) => ({
-  id: i * 2,
-  name: `Enterprise Model-${i * 2}`,
+  id: i + 1,
+  name: `Enterprise Model-${i + 1}`,
   price: Math.floor(Math.random() * 100000) + +10000,
 }));
 
-function Solution() {
+function SolutionTwo() {
   const [products, setProducts] = useState(initialProducts);
   const [search, setSearch] = useState("");
   const [isDark, setIsDark] = useState(false);
@@ -46,16 +64,7 @@ function Solution() {
   }, []);
 
   return (
-    <div
-      style={{
-        background: isDark ? "#2d3436" : "#fff",
-        color: isDark ? "#dfe6e9" : "#2d3436",
-        minHeight: "100vh",
-        padding: "20px",
-      }}
-    >
-      <h2>재고 관리 (Starter)</h2>
-      <button onClick={() => setIsDark(!isDark)}>테마 변경</button>
+    <ThemeProvider>
       <input
         value={search}
         onChange={(e) => setSearch(e.target.value)}
@@ -67,8 +76,8 @@ function Solution() {
           <ProductItem key={p.id} product={p} onRemove={handleRemove} />
         ))}
       </div>
-    </div>
+    </ThemeProvider>
   );
 }
 
-export default Solution;
+export default SolutionTwo;
