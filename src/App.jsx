@@ -1,11 +1,11 @@
 import { useState } from "react";
 import "./App.css";
-import FadeInScale from "./components/FadeInScale.jsx";
+import TooltipStarter from "./components/TooltipStarter.jsx";
 
 function App() {
   const [count, setCount] = useState(0);
 
-  return <FadeInScale />;
+  return <TooltipStarter />;
 }
 
 export default App;
