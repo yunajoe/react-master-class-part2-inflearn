@@ -1,17 +1,11 @@
 import { useState } from "react";
 import "./App.css";
-import PopupSystemCenter from "./components/PopupSystemCenter";
-import PopupCenterSystemTwo from "./components/PopupSystemCenterTwo";
+import FadeInScale from "./components/FadeInScale.jsx";
 
 function App() {
   const [count, setCount] = useState(0);
 
-  return (
-    <>
-      <PopupSystemCenter />
-      <PopupCenterSystemTwo />
-    </>
-  );
+  return <FadeInScale />;
 }
 
 export default App;
