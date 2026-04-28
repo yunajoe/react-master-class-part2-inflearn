@@ -1,11 +1,11 @@
 import { useState } from "react";
 import "./App.css";
-import TooltipStarter from "./components/TooltipStarter.jsx";
+import AccessibilityInput from "./components/AccessibilityInput.jsx";
 
 function App() {
   const [count, setCount] = useState(0);
 
-  return <TooltipStarter />;
+  return <AccessibilityInput />;
 }
 
 export default App;
