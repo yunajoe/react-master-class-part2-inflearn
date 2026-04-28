@@ -17,7 +17,10 @@ function UserInfoForm({ sectionTitle }) {
           <input
             id={id + "-lastName"}
             type="text"
+            //  aria-describedby  &&  aria-invalid => 스크린 리더(음성 읽어주기 도구)를 사용하는 사용자가 입력 폼의 상태를 정확히 파악할 수 있도록 돕는 역할
+            // 해당 요소에 대한 추가 설명이 어디에 있는지
             aria-describedby={id + "-lastNameError"}
+            // "현재 입력된 값이 유효한지(맞는지)"
             aria-invalid={lastNameInvalid}
             value={lastName}
             onChange={(e) => {
@@ -38,7 +41,7 @@ function UserInfoForm({ sectionTitle }) {
             id={id + "-firstName"}
             type="text"
             aria-describedby={id + "-firstNameError"}
-            aria-colindex={firstNameInvalid}
+            aria-invalid={firstNameInvalid}
             value={firstName}
             onChange={(e) => {
               setFirstName(e.target.value);
