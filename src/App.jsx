@@ -1,11 +1,13 @@
-import { useState } from "react";
 import "./App.css";
-import AccessibilityInput from "./components/AccessibilityInput.jsx";
+import UserInfoForm from "./components/UserInfoForm.jsx";
 
 function App() {
-  const [count, setCount] = useState(0);
-
-  return <AccessibilityInput />;
+  return (
+    <div>
+      <UserInfoForm sectionTitle="신청인 정보" />
+      <UserInfoForm sectionTitle="보호자 정보" />
+    </div>
+  );
 }
 
 export default App;
