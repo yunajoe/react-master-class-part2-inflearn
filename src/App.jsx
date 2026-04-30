@@ -1,26 +1,32 @@
-import { useRef, useState } from "react";
+import { useRef } from "react";
 import "./App.css";
-import MyInput from "./components/MyInput.jsx";
+import AnimatedBox from "./components/AnimatedBox.jsx";
+import ValidateInput from "./components/ValidateInput.jsx";
 
 function App() {
-  const [count, setCount] = useState(0);
   const inputControlRef = useRef();
-
+  const boxRef = useRef();
   return (
     <div>
-      <h1>🎮 컴포넌트 원격 제어</h1>
-      <MyInput ref={inputControlRef} placeholder="부모가 제어하는 입력창" />
-      <div>
-        <button onClick={() => inputControlRef.current.focus()}>
-          강제 포커스 명령
-        </button>
-        <button onClick={() => inputControlRef.current.clear()}>
-          입력창 비우기 명령
-        </button>
-        <button onClick={() => inputControlRef.current.greeting()}>
-          alert창 띄우기 명령
-        </button>
-      </div>
+      <style>{`@keyframes shake { 0%, 100% { transform: translateX(0); } 25% { transform: translateX(-5px); } 75% { transform: translateX(5px); } }`}</style>
+
+      <ValidateInput ref={inputControlRef} placeholder="test" />
+      <AnimatedBox ref={boxRef} />
+
+      <button
+        onClick={() => {
+          const result = inputControlRef.current.validate();
+          if (!result) {
+            // alert("필수 입력 항목을 적어주세요.");
+            inputControlRef.current.focus();
+            boxRef.current.startShake();
+            return;
+          }
+          alert("가입에 성공하였습니다.");
+        }}
+      >
+        가입하기
+      </button>
     </div>
   );
 }
