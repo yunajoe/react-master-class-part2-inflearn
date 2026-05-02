@@ -1,8 +1,8 @@
 import "./App.css";
-import SignupForm from "./components/SignupForm.jsx";
+import QuizPage from "./components/QuizPage.jsx";
 
 function App() {
-  return <SignupForm />;
+  return <QuizPage />;
 }
 
 export default App;

@@ -10,13 +10,11 @@ function MyInput({ ref, props }) {
    * useImperativeHandle은 부모의 ref.current 안에다 return에서 정의한 함수들을 넣는 역할
    */
   useImperativeHandle(ref, () => {
-    console.log("ref", ref);
     return {
       focus: () => {
         inputRef.current.focus();
       },
       clear: () => {
-        console.log("CLEAR");
         inputRef.current.value = "";
       },
       greeting: () => {
