@@ -1,8 +1,8 @@
 import "./App.css";
-import QuizPage from "./components/QuizPage.jsx";
+import FlatPickerWrapper from "./components/FlatPickerWrapper";
 
 function App() {
-  return <QuizPage />;
+  return <FlatPickerWrapper />;
 }
 
 export default App;
