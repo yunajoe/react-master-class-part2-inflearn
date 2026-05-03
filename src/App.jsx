@@ -1,8 +1,12 @@
 import "./App.css";
-import Checkout from "./components/Checkout.jsx";
+import TabContainer from "./components/TabContainer.jsx";
 
 function App() {
-  return <Checkout />;
+  return (
+    <>
+      <TabContainer />
+    </>
+  );
 }
 
 export default App;
