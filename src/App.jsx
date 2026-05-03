@@ -1,8 +1,8 @@
 import "./App.css";
-import HeavyListWrapper from "./components/HeavyListWrapper.jsx";
+import HighSpeedSearch from "./components/HighSpeedSearch.jsx";
 
 function App() {
-  return <HeavyListWrapper />;
+  return <HighSpeedSearch />;
 }
 
 export default App;
