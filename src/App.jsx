@@ -1,8 +1,8 @@
 import "./App.css";
-import AdminDashBoardWrapper from "./components/AdminDashBoardWrapper.jsx";
+import IntelligentTabs from "./components/IntelligentTabs.jsx";
 
 function App() {
-  return <AdminDashBoardWrapper />;
+  return <IntelligentTabs />;
 }
 
 export default App;
