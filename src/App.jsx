@@ -1,8 +1,8 @@
 import "./App.css";
-import IntelligentTabs from "./components/IntelligentTabs.jsx";
+import Checkout from "./components/Checkout.jsx";
 
 function App() {
-  return <IntelligentTabs />;
+  return <Checkout />;
 }
 
 export default App;
