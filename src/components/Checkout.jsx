@@ -56,6 +56,7 @@ function Checkout() {
         <label htmlFor="name">Quantity: </label>
         <input
           type="number"
+          disabled={isPending2}
           min={1}
           defaultValue={1}
           onChange={handleChange2}
