@@ -1,8 +1,8 @@
 import "./App.css";
-import HighSpeedSearch from "./components/HighSpeedSearch.jsx";
+import AdminDashBoardWrapper from "./components/AdminDashBoardWrapper.jsx";
 
 function App() {
-  return <HighSpeedSearch />;
+  return <AdminDashBoardWrapper />;
 }
 
 export default App;

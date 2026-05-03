@@ -1,0 +1,5 @@
+function HomeTab() {
+  return <div>🏠 홈 페이지 컨텐츠입니다.</div>;
+}
+
+export default HomeTab;
