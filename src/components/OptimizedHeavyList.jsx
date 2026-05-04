@@ -20,7 +20,7 @@ const OptimizedHeavyList = memo(({ query }) => {
         marginTop: "20px",
       }}
     >
-      {items}
+      {items.length > 0 ? items : <h1>없어용</h1>}
     </div>
   );
 });

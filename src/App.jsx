@@ -1,8 +1,8 @@
 import "./App.css";
-import OptimizedHeavyListWrapper from "./components/OptimizedHeavyListWrapper.jsx";
+import InventorySearch from "./components/InventorySearch.jsx";
 
 function App() {
-  return <OptimizedHeavyListWrapper />;
+  return <InventorySearch />;
 }
 
 export default App;
