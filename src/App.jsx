@@ -1,12 +1,8 @@
 import "./App.css";
-import TabContainer from "./components/TabContainer.jsx";
+import HeavyResultListWrapper from "./components/HeavyResultListWrapper.jsx";
 
 function App() {
-  return (
-    <>
-      <TabContainer />
-    </>
-  );
+  return <HeavyResultListWrapper />;
 }
 
 export default App;
