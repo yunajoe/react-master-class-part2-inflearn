@@ -1,8 +1,8 @@
 import "./App.css";
-import InventorySearch from "./components/InventorySearch.jsx";
+import HeavyViewWrapper from "./components/HeavyViewWrapper.jsx";
 
 function App() {
-  return <InventorySearch />;
+  return <HeavyViewWrapper />;
 }
 
 export default App;
