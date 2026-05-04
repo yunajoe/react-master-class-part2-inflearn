@@ -17,5 +17,3 @@ const HeavyResultList = memo(function HeavyResultList({ deferredQuery }) {
 });
 
 export default HeavyResultList;
-
-// export default HeavyResultList;

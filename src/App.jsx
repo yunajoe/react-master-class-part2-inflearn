@@ -1,8 +1,8 @@
 import "./App.css";
-import HeavyResultListWrapper from "./components/HeavyResultListWrapper.jsx";
+import OptimizedHeavyListWrapper from "./components/OptimizedHeavyListWrapper.jsx";
 
 function App() {
-  return <HeavyResultListWrapper />;
+  return <OptimizedHeavyListWrapper />;
 }
 
 export default App;
