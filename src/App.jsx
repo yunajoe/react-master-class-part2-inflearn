@@ -1,8 +1,8 @@
 import "./App.css";
-import BasicRoute from "./components/BasicRoute.jsx";
+import OutletRoute from "./components/OutletRoute.jsx";
 
 function App() {
-  return <BasicRoute />;
+  return <OutletRoute />;
 }
 
 export default App;
