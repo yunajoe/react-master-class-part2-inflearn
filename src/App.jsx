@@ -1,8 +1,8 @@
 import "./App.css";
-import OutletRoute from "./components/OutletRoute.jsx";
+import DynamicRoute from "./components/DynamicRoute.jsx";
 
 function App() {
-  return <OutletRoute />;
+  return <DynamicRoute />;
 }
 
 export default App;
