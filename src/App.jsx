@@ -1,8 +1,8 @@
 import "./App.css";
-import DynamicRoute from "./components/DynamicRoute.jsx";
+import SearchParamLayout from "./components/SearchParamLayout.jsx";
 
 function App() {
-  return <DynamicRoute />;
+  return <SearchParamLayout />;
 }
 
 export default App;
