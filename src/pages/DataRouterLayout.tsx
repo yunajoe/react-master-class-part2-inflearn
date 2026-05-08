@@ -2,6 +2,7 @@ import { createBrowserRouter, RouterProvider } from "react-router";
 import AnalyticsPage from "./AnalyticsPage";
 import InventoryPage from "./InventoryPage";
 import Layout from "./Layout";
+import PrefetchPage, { inventoryLoader } from "./PrefetchPage";
 
 const router = createBrowserRouter([
   {
@@ -13,8 +14,13 @@ const router = createBrowserRouter([
         element: <InventoryPage />,
       },
       {
-        path: "test", // 건물 내부의 특정 사무실
+        path: "analytics", // 건물 내부의 특정 사무실
         element: <AnalyticsPage />,
+      },
+      {
+        path: "prefetch", // 건물 내부의 특정 사무실
+        element: <PrefetchPage />,
+        loader: inventoryLoader,
       },
     ],
   },
