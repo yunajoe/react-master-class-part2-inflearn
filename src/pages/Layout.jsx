@@ -6,6 +6,7 @@ function Layout() {
       <nav style={{ padding: "10px", background: "#eee" }}>
         <Link to="/">Home</Link> | <Link to="/analytics">Analytics</Link>|{" "}
         <Link to="/prefetch">Prefetch</Link>
+        <Link to="/protected">Protected</Link>
       </nav>
       <div style={{ padding: "20px" }}>
         <Outlet />
